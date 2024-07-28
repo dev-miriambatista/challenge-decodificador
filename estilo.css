@@ -1,4 +1,131 @@
-html,body{
-    background-color: black;
-    color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Reseta margens e preenchimentos, define box-sizing e tamanho de fonte base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
 }
+
+/* Define estilos gerais para o HTML e body */
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444444;
+    color: antiquewhite;
+    height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+}
+#logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+g{
+    display: flex;
+    width:50%;
+    margin: 0;
+
+}
+
+/* Estiliza o container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 90vw;
+    height: 91vh;
+    background-image:linear-gradient(to bottom right,#2aebd1,#e65c96,#e3aaf5); 
+ 
+    border-radius: 1em;
+}
+
+/* Estiliza a seção de controle */
+.control,.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 85vh;  
+}
+
+/* Estiliza a caixa de mensagem dentro da .box */
+.msg-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    border-radius: 8px;
+}
+
+/* Estiliza o título dentro da .msg-box */
+.msg-crip {
+    margin-bottom: 1rem;
+}
+
+/* Estiliza o campo de entrada de texto no formulário */
+.text-input-control,.text-input {
+    display: flex;
+   align-items: start;
+    font: normal bolder 1em "Roboto Mono";
+    color: #444444;
+    width: 40vw;
+    height: 60vh;
+    margin: 0;
+    justify-content: start;
+
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.81);
+}
+
+/* Estiliza os botões dentro do formulário */
+.btns {
+    display: flex;
+
+}
+
+.btn, .btn-duo {
+  
+    border-radius: 0.7em;
+    font: normal bolder 1.2em "Roboto Mono";
+    color: #444444;
+    height: 7vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 2%;
+
+    /* From https://css.glass */
+background: rgba(110, 240, 127, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+border: 1px solid rgba(110, 240, 127, 0.81);
+}
+
+/* Estiliza o formulário */
+
+
+/* Estiliza o título principal dentro do formulário */
+.titulo {
+ font: normal bolder 1.5em "Roboto Mono";
+ color: #444444;
+}
+
+/* Remove qualquer estilização desnecessária para inputs */
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
